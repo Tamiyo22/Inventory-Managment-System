@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #5EA9Be" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyPartController">
+   <children>
+      <Label layoutX="39.0" layoutY="29.0" text="Modify Part">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="inHouseButton" layoutX="147.0" layoutY="31.0" mnemonicParsing="false" onAction="#inHouseListener" selected="true" text="In House" />
+      <RadioButton fx:id="outsourcedButton" layoutX="279.0" layoutY="31.0" mnemonicParsing="false" onAction="#outSourcedListener" text="Outsourced" />
+      <TextField fx:id="partId" editable="false" layoutX="141.0" layoutY="79.0" promptText="ID SET" />
+      <TextField fx:id="modifyPartName" layoutX="141.0" layoutY="122.0" />
+      <TextField fx:id="modifyPartStock" layoutX="141.0" layoutY="160.0" />
+      <TextField fx:id="partOrCompany" layoutX="141.0" layoutY="292.0" />
+      <TextField fx:id="modifyPartMax" layoutX="140.0" layoutY="246.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="modifyPartPrice" layoutX="141.0" layoutY="200.0" />
+      <Button fx:id="savePartButton" layoutX="373.0" layoutY="341.0" mnemonicParsing="false" onAction="#savePartButtonListener" text="Save" />
+      <Button fx:id="cancelPartButton" layoutX="441.0" layoutY="341.0" mnemonicParsing="false" onAction="#cancelPartListener" text="Cancel" />
+      <Label layoutX="54.0" layoutY="83.0" text="ID" />
+      <Label layoutX="54.0" layoutY="126.0" text="Name" />
+      <Label layoutX="54.0" layoutY="164.0" text="Inventory" />
+      <Label layoutX="54.0" layoutY="204.0" text="Price/Cost" />
+      <Label layoutX="58.0" layoutY="251.0" text="Max" />
+      <Label fx:id="modifyPartOrCompany" layoutX="40.0" layoutY="296.0" text="Machine ID" />
+      <Label layoutX="313.0" layoutY="251.0" text="Min" />
+      <TextField fx:id="modifyPartMin" layoutX="344.0" layoutY="247.0" />
+   </children>
+</AnchorPane>
